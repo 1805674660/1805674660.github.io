@@ -6,11 +6,13 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
+    "deploy":"gh-pages -d dist -r https://1805674660.github.io.git -b gh-pages",
     "docs:deploy": "bash deploy.sh",
     "mp-ci": "node mp-ci.js"
   },
   "devDependencies": {
     "@mr-hope/vuepress-plugin-reading-time": "^1.30.0",
+    "gh-pages": "^6.0.0",
     "vuepress": "^1.9.8",
     "vuepress-plugin-dynamic-title": "^1.0.0",
     "vuepress-plugin-zooming": "^1.1.8",
